@@ -1,0 +1,171 @@
+# depslib dependency file v1.0
+1535555967 source:f:\课程\study_c\practice\linmu\linmu\linmu\class1.cpp
+	"Class1.h"
+
+1535555978 f:\课程\study_c\practice\linmu\linmu\linmu\class1.h
+	<stdlib.h>
+	<map>
+	<vector>
+	<iostream>
+
+1535557511 source:f:\课程\study_c\practice\linmu\linmu\linmu\main.cpp
+	<iostream>
+	"Class1.h"
+	<vector>
+	"Class2.h"
+	<stack>
+	<queue>
+
+1535558824 f:\课程\study_c\practice\linmu\linmu\linmu\class2.h
+	<stdlib.h>
+	<map>
+	<vector>
+	<iostream>
+	<stack>
+	<queue>
+	<string>
+
+1535557278 source:f:\课程\study_c\practice\linmu\linmu\linmu\class2.cpp
+	"Class2.h"
+
+1535555967 source:f:\课程\study_c\模板\linmu\linmu\linmu\class1.cpp
+	"Class1.h"
+
+1535555978 f:\课程\study_c\模板\linmu\linmu\linmu\class1.h
+	<stdlib.h>
+	<map>
+	<vector>
+	<iostream>
+
+1535558808 source:f:\课程\study_c\模板\linmu\linmu\linmu\class2.cpp
+	"Class2.h"
+
+1535558824 f:\课程\study_c\模板\linmu\linmu\linmu\class2.h
+	<stdlib.h>
+	<map>
+	<vector>
+	<iostream>
+	<stack>
+	<queue>
+	<string>
+
+1535698416 source:f:\课程\study_c\模板\linmu\linmu\linmu\class3.cpp
+	"Class3.h"
+
+1535698409 f:\课程\study_c\模板\linmu\linmu\linmu\class3.h
+	<stdlib.h>
+	<map>
+	<vector>
+	<iostream>
+	<stack>
+	<queue>
+	<string>
+	<algorithm>
+
+1536715758 source:f:\课程\study_c\模板\linmu\linmu\linmu\main.cpp
+	<iostream>
+	"Class1.h"
+	<vector>
+	"Class2.h"
+	<stack>
+	<queue>
+	"Class3.h"
+	"Class4.h"
+	"Class5.h"
+	"Class6.h"
+	"Class7.h"
+	<limits.h>
+	"Class8.h"
+	"Class9.h"
+
+1535713065 source:f:\课程\study_c\模板\linmu\linmu\linmu\class4.cpp
+	"Class4.h"
+
+1535713093 f:\课程\study_c\模板\linmu\linmu\linmu\class4.h
+	<stdlib.h>
+	<map>
+	<vector>
+	<iostream>
+	<stack>
+	<queue>
+	<string>
+	<algorithm>
+	<set>
+
+1535788924 source:f:\课程\study_c\模板\linmu\linmu\linmu\class5.cpp
+	"Class5.h"
+
+1535788986 f:\课程\study_c\模板\linmu\linmu\linmu\class5.h
+	<stdlib.h>
+	<map>
+	<vector>
+	<iostream>
+	<stack>
+	<queue>
+	<string>
+	<algorithm>
+	<set>
+
+1535816866 source:f:\课程\study_c\模板\linmu\linmu\linmu\class6.cpp
+	"Class6.h"
+
+1535816851 f:\课程\study_c\模板\linmu\linmu\linmu\class6.h
+	<stdlib.h>
+	<map>
+	<vector>
+	<iostream>
+	<stack>
+	<queue>
+	<string>
+	<algorithm>
+	<set>
+	"Class5.h"
+
+1535878144 f:\课程\study_c\模板\linmu\linmu\linmu\class7.h
+	<stdlib.h>
+	<map>
+	<vector>
+	<iostream>
+	<stack>
+	<queue>
+	<string>
+	<algorithm>
+	<set>
+	<map>
+	<bitset>
+
+1536403838 source:f:\课程\study_c\模板\linmu\linmu\linmu\class7.cpp
+	"Class7.h"
+
+1536672888 f:\课程\study_c\模板\linmu\linmu\linmu\class8.h
+	<stdlib.h>
+	<map>
+	<vector>
+	<iostream>
+	<stack>
+	<queue>
+	<string>
+	<algorithm>
+	<set>
+	<map>
+	<bitset>
+
+1536673549 source:f:\课程\study_c\模板\linmu\linmu\linmu\class8.cpp
+	"Class8.h"
+
+1536715656 source:f:\课程\study_c\模板\linmu\linmu\linmu\class9.cpp
+	"Class9.h"
+
+1536717201 f:\课程\study_c\模板\linmu\linmu\linmu\class9.h
+	<stdlib.h>
+	<map>
+	<vector>
+	<iostream>
+	<stack>
+	<queue>
+	<string>
+	<algorithm>
+	<set>
+	<map>
+	<bitset>
+
