@@ -19,36 +19,52 @@ nums2 = [3, 4]
 
 The median is (2 + 3)/2 = 2.5
 
-
 class Solution {
 public:
     double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
         if(nums1.size()<1 && nums2.size()<1) return 0.0;
-        if(nums1.size()<1)
+        bool flag=nums1.size()>nums2.size()?true:false;
+        vector<int>& n1=flag?nums1:nums2;
+        vector<int>& n2=flag?nums2:nums1;
+        if(n2.size()<1)
         {
-            return Search(nums2);
+            return Search(n1);
         }
-        if(nums2.size()<1)
+        int index1=0;
+        int index2=0;
+        int mid=n2.size()+((n1.size()-n2.size())>>1)+1;
+        bool evens=(n1.size()+n2.size())%2==0?true:false;
+        int index=0;
+        vector<int> res(mid,0);
+        while((index1<nums1.size() || index2<nums2.size())&& index<mid)
         {
-            return Search(nums1);
+            
+            if(index1==nums1.size())
+            {
+                 res[index++]=nums2[index2++];
+            }else if(index2==nums2.size())
+            {
+                 res[index++]=nums1[index1++];
+            }else
+            {
+                if(nums1[index1]<nums2[index2])
+                {
+                     res[index++]=nums1[index1++];
+                }else
+                {
+                     res[index++]=nums2[index2++];
+                }
+            } 
+           
         }
-        vector<int> result;
-        int index1_i=0;
-        int index2_i=0;
-        while(index1_i<nums1.size() && index2_i<nums2.size())
+        if(evens)
         {
-            int tmp=nums1[index1_i]<nums2[index2_i]?nums1[index1_i++]:nums2[index2_i++];
-            result.push_back(tmp);
-        }
-        while(index1_i<nums1.size())
+            return (res[mid-1]+res[mid-2])/2.0;
+        }else
         {
-            result.push_back(nums1[index1_i++]);
+            return (res[mid-1]+res[mid-1])/2.0;
         }
-        while(index2_i<nums2.size())
-        {
-            result.push_back(nums2[index2_i++]);
-        }
-        return Search(result);  
+        
     }
     
 private:
@@ -65,6 +81,7 @@ private:
         }
     }
 };
+
 
 ############################################
 
