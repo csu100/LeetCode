@@ -15,7 +15,13 @@ import java.util.Arrays;
 
 
 public class Code_04_QuickSort {
-
+    /**
+     * 快速排序
+     * 时间复杂度：O(NlogN)；空间复杂度：O(logN)，不稳定
+     *
+     * @param arr         list
+     * @param reverseFlag true: 升序; false: 降序
+     */
     public static void quickSort(Integer[] arr, boolean reverseFlag) {
         if (arr == null || arr.length < 2) {
             return;
@@ -23,7 +29,7 @@ public class Code_04_QuickSort {
         quickSort(arr, 0, arr.length - 1, reverseFlag);
     }
 
-    public static void quickSort(Integer[] arr, int L, int R, boolean reverseFlag) {
+    private static void quickSort(Integer[] arr, int L, int R, boolean reverseFlag) {
         if (L < R) {
             swap(arr, R, (int) (Math.random() * (R - L) + L));
             Integer[] temp = new Integer[2];
@@ -37,7 +43,7 @@ public class Code_04_QuickSort {
         }
     }
 
-    public static Integer[] partionSortDesc(Integer[] arr, int L, int R) {
+    private static Integer[] partionSortDesc(Integer[] arr, int L, int R) {
         int less = L - 1;
         int more = R + 1;
         int temp = arr[R];
@@ -53,7 +59,7 @@ public class Code_04_QuickSort {
         return new Integer[]{less + 1, more - 1};
     }
 
-    public static Integer[] partionSortAsc(Integer[] arr, int L, int R) {
+    private static Integer[] partionSortAsc(Integer[] arr, int L, int R) {
         int less = L - 1;
         int more = R + 1;
         int temp = arr[R];
@@ -69,7 +75,7 @@ public class Code_04_QuickSort {
         return new Integer[]{less + 1, more - 1};
     }
 
-    public static void swap(Integer[] arr, int i, int j) {
+    private static void swap(Integer[] arr, int i, int j) {
         int temp = arr[i];
         arr[i] = arr[j];
         arr[j] = temp;
